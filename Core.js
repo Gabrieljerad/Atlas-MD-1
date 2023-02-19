@@ -476,11 +476,9 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
                 });
             });
         }
-        if (cmd.react) {
-            const reactm = {
-                react: {
-                    text: cmd.react,
-                    key: m.key,
+        if(isCmd){
+            Miku.sendMessage(from, { react: { text: `🐼`, key: m.key }})
+            }
                 },
             };
             await Miku.sendMessage(m.from, reactm);
