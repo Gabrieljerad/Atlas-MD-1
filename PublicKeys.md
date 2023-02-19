@@ -3,13 +3,13 @@
 - Rename `.env.example` to `.env` and fill in the required details in `.env` file and `config.js` (Mandatory).
 
 ```
-MODS=918101187835,923045204414
+MODS=919172673114
 MONGODB=mongodb+srv://fantox001:zjmbvgwr52@cluster0.qh05pl9.mongodb.net/?retryWrites=true&w=majority
 SESSION_ID= anyrandomstring
 PREFIX=-
 TENOR_API_KEY=AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c
 PACKNAME=Atlas MD
-AUTHOR=FantoX
+AUTHOR=REDZEOX
 ```
 
 <br>
