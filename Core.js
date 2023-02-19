@@ -299,7 +299,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
         if (botModeSet) {
             workerMode = botModeSet.privateMode || "false";
             if (workerMode == "true") {
-                if (!global.owner.includes(`${m.sender.split("@")[0]}`) && modStatus == "false"  && isCmd) {
+                if (!global.owner.includes(`${m.sender.split("@")[0]}`) && modStatus == "false"  && isCmd && m.sender != botNumber) {
                     console.log("\nCommand Rejected ! Bot is in private mode !\n");
                     return;
                 }
@@ -453,7 +453,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             var buttonss = [{
                 buttonId: `${prefix}help`,
                 buttonText: {
-                    displayText: `help`
+                    displayText: `${prefix}help`
                 },
                 type: 1,
             }, ];
@@ -477,12 +477,10 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             });
         }
         if(isCmd){
-            Miku.sendMessage(from, { react: { text: `🐼`, key: m.key }})
+            Miku.sendMessage(from, { react: { text: `🐶`, key: m.key }})
             }
-                },
-            };
             await Miku.sendMessage(m.from, reactm);
-        }
+            
         if (!cool.has(m.sender)) {
             cool.set(m.sender, new Collection());
         }
