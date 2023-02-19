@@ -102,7 +102,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
             .includes(m.sender);
         const isOwner = global.owner.includes(m.sender);
-        global.suppL = 'https://cutt.ly/AtlasBotSupport';
+        global.suppL = 'https://chat.whatsapp.com/L8hlSC1zOUlLPBk4bqfrdk';
         const eco = require('discord-mongoose-economy')
         const ty = eco.connect('mongodb+srv://fantox001:zjmbvgwr52@cluster0.qh05pl9.mongodb.net/?retryWrites=true&w=majority');
 
@@ -453,7 +453,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             var buttonss = [{
                 buttonId: `${prefix}help`,
                 buttonText: {
-                    displayText: `${prefix}help`
+                    displayText: `help`
                 },
                 type: 1,
             }, ];
@@ -471,7 +471,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             };
             await Miku.sendMessage(m.from, reactionMess).then(() => {
                 return Miku.sendMessage(m.from, buttonmess, {
-                    react: "🍁",
+                    react: "🐼",
                     quoted: m
                 });
             });
