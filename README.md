@@ -34,17 +34,20 @@
 <summary>🎐 ᴅᴇᴘʟᴏʏ ᴀᴛʟᴀꜱ-ᴍᴅ ɪɴ ᴀɴʏ ᴘʟᴀᴛғᴏʀᴍ 🎐</summary>
 <br>
 
+<h1 align="center"> 
 <a href="https://railway.app/new/template/n1D5wt?referralCode=nRl6ST">
 <img src="https://railway.app/button.svg" alt="Deploy on Railway" width="150px">
 </a>
 </p>
 </h4>
 
+<h2 align="center"> 
 <a href="https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/fantox001/atlas-md:main&env[PORT]=8000&env[PREFIX]=-&&env[MONGODB]=mongodb+srv://fantox001:zjmbvgwr52@cluster0.qh05pl9.mongodb.net/?retryWrites=true&w=majority&&env[SESSION_ID]=enterYourSession&&env[MODS]=918101187835,919735940276&&env[TENOR_API_KEY]=AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c&&env[PACKNAME]=Miku-Nakano&&env[AUTHOR]=FantoX&&name=atlas">
     <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy on Koyeb" width="150px">
     </a>
 </p>
 
+<h3 align="center"> 
 <a href="https://repl.it/github/REDZEOX/Atlas-MD">
 <img src="https://i.ibb.co/zrB5kMh/deploy-on-repl.jpg" width="170px" alt="Deploy on Heroku" >
  </a>
@@ -53,7 +56,7 @@
 
 </details>
 
-<h2 align="center">🎀 ᴋᴇʏ ғᴇᴀᴛᴜʀᴇꜱ 🎀
+<h4 align="center">🎀 ᴋᴇʏ ғᴇᴀᴛᴜʀᴇꜱ 🎀
 </h2>
 
 
