@@ -476,11 +476,15 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
                 });
             });
         }
-        if(isCmd){
-            Miku.sendMessage(from, { react: { text: `🐶`, key: m.key }})
-            }
+        if (cmd.react) {
+            const reactm = {
+                react: {
+                    text: cmd.react,
+                    key: m.key,
+                },
+            };
             await Miku.sendMessage(m.from, reactm);
-            
+        }
         if (!cool.has(m.sender)) {
             cool.set(m.sender, new Collection());
         }
