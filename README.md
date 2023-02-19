@@ -49,13 +49,6 @@
 <img src="https://i.ibb.co/zrB5kMh/deploy-on-repl.jpg" width="170px" alt="Deploy on Heroku" >
  </a>
 
-• ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ( ɪꜱɴ'ᴛ ᴡᴏʀᴋɪɴɢ ɪᴛ ᴡɪʟʟ ʙᴇ ғɪꭗᴇᴅ ꜱᴏᴏɴ ! )
-</h4>
-      
-</p>
-    <a href="https://heroku.com/deploy?template=https://github.com/FantoX001/Atlas-MD">
-    <img src="https://www.herokucdn.com/deploy/button.png" width="150px" alt="Deploy on Heroku" >
-    </a>
 </p>
 
 </details>
