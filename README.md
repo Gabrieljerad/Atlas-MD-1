@@ -52,8 +52,6 @@
 </p>
 
 </details>
-</br>
-
 
 <h2 align="center">🎀 ᴋᴇʏ ғᴇᴀᴛᴜʀᴇꜱ 🎀
 </h2>
