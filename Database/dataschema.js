@@ -1,11 +1,4 @@
-require("../config.js");
-const config = require('../config');
 const mongoose = require("mongoose");
-const eco = require('discord-mongoose-economy');
-
-const db1= mongoose.createConnection(config.mongodb);
-const db2= mongoose.createConnection(config.mongodb);
-
 
 const GroupSchema = new mongoose.Schema({
   id: { type: String,  unique: true ,required: true },
@@ -35,8 +28,8 @@ const CharacterSchema = new mongoose.Schema({
 });
 
 
-const mku = db1.model("Mku", UserSchema);
-const mk =db1.model("Mk", GroupSchema)
-const mkchar = db2.model("Mkchar", CharacterSchema);
+const mku = mongoose.model("Mku", UserSchema);
+const mk =mongoose.model("Mk", GroupSchema)
+const mkchar = mongoose.model("Mkchar", CharacterSchema);
 
 module.exports = { mk, mku, mkchar };
