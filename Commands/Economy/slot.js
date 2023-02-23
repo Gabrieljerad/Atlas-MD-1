@@ -3,9 +3,7 @@ require("../../config.js");
 require("../../Core.js");
 const { mku, mk } = require("../../Database/dataschema.js");
 const fs = require("fs");
-const config = require('../../config');
-const eco = require('discord-mongoose-economy')
-const ty = eco.connect(config.mongodb);
+
 
 module.exports = { 
     name: "slot",  
@@ -16,7 +14,7 @@ module.exports = {
     start: async ( 
         Miku, 
         m, 
-        { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator} 
+        { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator,eco,ty} 
     ) => {
       var today = new Date();
       if (today.getDay() == 6 || today.getDay() == 5 || today.getDay() == 0){
