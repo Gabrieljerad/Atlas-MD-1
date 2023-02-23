@@ -21,6 +21,9 @@ global.packname = process.env.PACKNAME || `Atlas MD`;
 global.author = process.env.AUTHOR || "by: Team Atlas";
 global.port = process.env.PORT || "8000";
 
+module.exports = {
+  mongodb: global.mongodb,
+};
 
 
 // ---------------------Do Not Modify this part------------------- //
