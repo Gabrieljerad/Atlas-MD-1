@@ -48,62 +48,61 @@ module.exports = {
                     //console.log(animeCharacter)
                 })
             
-          return m.reply(`ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ᴀʟʀᴇᴀᴅʏ ꜱᴇᴛ ᴀꜱ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.`);
+          return m.reply(`Character number ${charNum} - ${botName} is already set as the default character.`);
         }
         else if (charNum == '0') {
             await mkchar.findOneAndUpdate({ id: '1'}, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
         else if (charNum == '1') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
         else if (charNum == '2') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
         else if (charNum == '3') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
         else if (charNum == '4') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
         else if (charNum == '5') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
         else if (charNum == '6') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
         else if (charNum == '7') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true }).then(async(res) => {
-                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botNames[charNum]} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m })
+                await Miku.sendMessage(m.from, { image: {url:botLogos[charNum]},caption: `Character number ${charNum} - ${botNames[charNum]} is now the default character.\n` }, { quoted: m })
             }).catch(error => {
-                return m.reply(`ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜɪʟᴇ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ.`)
+                return m.reply(`An error occurred while updating the character number.`)
             })}
 
         else {
-            return m.reply(`ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} ɪꜱ ɴᴏᴛ ᴀᴅᴅᴇᴅ.\n\nᴛʏᴘᴇ *${prefix}ᴄʜᴀʀʟɪꜱᴛ* ᴛᴏ ꜱᴇᴇ ᴛʜᴇ ʟɪꜱᴛ ᴏғ ᴀᴅᴅᴇᴅ ᴄʜᴀʀᴀᴄᴛᴇʀꜱ.`);
+            return m.reply(`Character number ${charNum} is not added.\n\ntype *${prefix}charlist* to see the list of added characters.`);
         }
     })
-
 
         /*if (charNum == '0') {
             await mkchar.findOneAndUpdate({ id: '1'}, { $set: { seletedCharacter: charNum } }, { new: true })
