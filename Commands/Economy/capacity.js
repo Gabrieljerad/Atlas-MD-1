@@ -3,9 +3,7 @@ require("../../config.js");
 require("../../Core.js");
 const { mku, mk } = require("../../Database/dataschema.js");
 const fs = require("fs");
-const config = require('../../config');
-const eco = require('discord-mongoose-economy')
-const ty = eco.connect(config.mongodb);
+
 
 
  module.exports = { 
@@ -18,7 +16,7 @@ const ty = eco.connect(config.mongodb);
     start: async ( 
         Miku, 
         m, 
-        { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator} 
+        { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator,eco,ty} 
     ) => {
         if (!text) {
             return Miku.sendMessage(m.from, { text: `『  *Bank 💴 Capacity*  』\n\n1 | *1000 sp* = 100 💎\n\n2 | *100000 sp* = 1000 💎\n\n3 | *10000000 sp* = 10000000 💎\n\nExample: *${prefix}capacity 1* OR *${prefix}bankupgrade 1000*` }, { quoted: m });
@@ -54,6 +52,3 @@ const ty = eco.connect(config.mongodb);
             }
               }
             }
-
-
-          
