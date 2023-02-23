@@ -55,7 +55,7 @@ const prefix = global.prefa;
 
 
 global.Levels = require("discord-xp");
-Levels.setURL("mongodb+srv://fantox001:zjmbvgwr52@cluster0.qh05pl9.mongodb.net/?retryWrites=true&w=majority");
+Levels.setURL("mongodb://mongo:8yS5zqvJ1Fok55r77qqH@containers-us-west-148.railway.app:7915");
 
 console.log(color("\nDatabase 1 has been connected Successfully !\n", "aqua"));
 
@@ -104,7 +104,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
         const isOwner = global.owner.includes(m.sender);
         global.suppL = 'https://chat.whatsapp.com/L8hlSC1zOUlLPBk4bqfrdk';
         const eco = require('discord-mongoose-economy')
-        const ty = eco.connect('mongodb+srv://fantox001:zjmbvgwr52@cluster0.qh05pl9.mongodb.net/?retryWrites=true&w=majority');
+        const ty = eco.connect('mongodb://mongo:8yS5zqvJ1Fok55r77qqH@containers-us-west-148.railway.app:7915');
 
 
         const isCmd = body.startsWith(prefix);
