@@ -4,10 +4,6 @@ require("../../Core.js");
 const { mku, mk } = require("../../Database/dataschema.js");
 const fs = require("fs");
 require("../../Database/dataschema.js");
-const config = require('../../config');
-const eco = require('discord-mongoose-economy')
-const ty = eco.connect(config.mongodb);
-
 
 module.exports = { 
 
@@ -19,15 +15,15 @@ module.exports = {
     start: async ( 
         Miku, 
       m, 
-      { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator} 
+      { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator,eco,ty} 
     ) => {
         let user = m.sender 
          const cara = "cara"
          const balance = await eco.balance(user, cara); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
          let buttons = [
             {
-              buttonId: `${prefix}deposit ${balance.wallet}`,
-              buttonText: { displayText: `Deposit All 💴` },
+              buttonId: `${prefix}deposit`,
+              buttonText: { displayText: "Deposit 💴" },
               type: 1,
             },
             {
