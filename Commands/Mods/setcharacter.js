@@ -12,21 +12,21 @@ module.exports = {
     desc: "Ban a member", 
     category: "core", 
     usage: "setchar 0/1/2/3/4/5/6/7", 
-    react: "🎀", 
+    react: "🐼", 
     start: async ( 
       Miku, 
       m, 
       { text, prefix, isBotAdmin, isAdmin, mentionByTag, pushName, isCreator,modStatus} 
     ) => { 
 
-      if (modStatus=="false"&&!isCreator)  return m.reply('ꜱᴏʀʀʏ, ᴏɴʟʏ ᴍʏ *ᴅᴇᴠꜱ* ᴀɴᴅ *ᴍᴏᴅꜱ* ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ !');
-      if (!text) return m.reply(`ᴘʟᴇᴀꜱᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ᴛᴏ ꜱᴇᴛ (0/1/2/3/4/5/6/7).\n\nᴇxᴀᴍᴘʟᴇ: ${prefix}ꜱᴇᴛᴄʜᴀʀ 0`);
+      if (modStatus=="false"&&!isCreator)  return m.reply('Sorry, only my *Devs* and *Mods* can use this command !');
+      if (!text) return m.reply(`Please provide a character number to set (0/1/2/3/4/5/6/7).\n\nExample: ${prefix}setchar 0`);
 
       let charNum = text;
 
       await mkchar.create({id:'1', seletedCharacter: "0"});
 
-      let botNames = ['ᴀᴛʟᴀꜱ', 'ᴘᴏᴡᴇʀ', 'ᴍᴀᴋɪᴍᴀ', 'ʀɪᴀꜱ ɢʀᴇᴍᴏʀʏ', 'ᴢᴇʀᴏ ᴛᴡᴏ', 'ᴄʜɪᴋᴀ' , 'ᴍɪᴋᴜ ɴᴀᴋᴀɴᴏ', 'ᴍᴀʀɪɴ ᴋɪᴛᴀɢᴀᴡᴀ']
+      let botNames = ['Atlas MD', 'Power MD', 'Makima MD', 'Rias Gremory', 'Zero Two', 'Chika MD' , 'Miku MD', 'Marin Kitagawa']
       let botLogos =[
         'https://c4.wallpaperflare.com/wallpaper/523/235/790/anime-anime-girls-red-eyes-wallpaper-preview.jpg',
         'https://wallpapercave.com/wp/wp11253614.jpg',
@@ -104,50 +104,51 @@ module.exports = {
         }
     })
 
+
         /*if (charNum == '0') {
             await mkchar.findOneAndUpdate({ id: '1'}, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "0";
-            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
             
         }
         else if (charNum == '1') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "1";
-            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
         }
         else if (charNum == '2') {
             await await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "2";
-            return Miku.sendMessage(m.from, { image: {url:botImage1},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
     
         }
         else if (charNum == '3') {
             await await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "3";
-            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
     
         }
         else if (charNum == '4') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "4";
-            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
             
         }
         else if (charNum == '5') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "5";
-            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
             
         }
         else if (charNum == '7') {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "0";
-            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
         }
         else {
             await mkchar.findOneAndUpdate({ id: '1' }, { $set: { seletedCharacter: charNum } }, { new: true })
             //global.animeCharacter = "7";
-            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `ᴄʜᴀʀᴀᴄᴛᴇʀ ɴᴜᴍʙᴇʀ ${charNum} - ${botName} ɪꜱ ɴᴏᴡ ᴛʜᴇ ᴅᴇғᴀᴜʟᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ.\n` }, { quoted: m });
+            return await Miku.sendMessage(m.from, { image: {url:botImage1},caption: `Character number ${charNum} - ${botName} is now the default character.\n` }, { quoted: m });
         }
         */
 
