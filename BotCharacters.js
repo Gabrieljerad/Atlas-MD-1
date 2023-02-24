@@ -2,16 +2,16 @@ const fs = require("fs");
 const { mkchar } = require("./Database/dataschema.js");
 
 
-/* ---ᴀᴅᴅᴇᴅ ᴀɴɪᴍᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ ʟɪꜱᴛ---  /
+/* ---Added Anime Character list---  /
 
-0 --- ᴀᴛʟᴀꜱ
-1 --- ᴘᴏᴡᴇʀ
-2 --- ᴍᴀᴋɪᴍᴀ
-3 --- ʀɪᴀꜱ ɢʀᴇᴍᴏʀʏ
-4 --- ᴢᴇʀᴏ ᴛᴡᴏ
-5 --- ᴄʜɪᴋᴀ
-6 --- ᴍɪᴋᴜ ɴᴀᴋᴀɴᴏ
-7 --- ᴍᴀʀɪɴ ᴋɪᴛᴀɢᴀᴡᴀ
+0 --- Atlas MD
+1 --- Power
+2 --- Makima
+3 --- Rias Gremory
+4 --- Zero Two
+5 --- Chika
+6 --- Miku
+7 --- Marin Kitagawa
 
 Image Source: https://wall.alphacoders.com/
 Image Source: https://wallpapercave.com/
@@ -21,7 +21,7 @@ Image Source: https://wallpapercave.com/
 
 
 global.charID0 = {
-    botName : "ᴀᴛʟᴀꜱ",
+    botName : "Atlas MD",
     botVideo : fs.readFileSync("./Assets/REDZEOX.mp4"),
     botImage1 : "https://i.ibb.co/r2dyh2S/20230213-154752.jpg",
     botImage2 : "https://i.ibb.co/r2dyh2S/20230213-154752.jpg",
@@ -32,7 +32,7 @@ global.charID0 = {
 }
 
 global.charID1 = {
-  botName : "ᴘᴏᴡᴇʀ",
+  botName : "Power MD",
   botVideo : fs.readFileSync("./Assets/power.mp4"),
   botImage1 : "https://c4.wallpaperflare.com/wallpaper/960/587/732/power-chainsaw-man-chainsaw-man-manga-hd-wallpaper-preview.jpg",
   botImage2 : "https://c4.wallpaperflare.com/wallpaper/553/511/639/chainsaw-man-power-chainsaw-man-denji-chainsaw-man-hd-wallpaper-preview.jpg",
@@ -43,7 +43,7 @@ global.charID1 = {
 }
 
 global.charID2 = {
-  botName : "ᴍᴀᴋɪᴍᴀ",
+  botName : "Makima MD",
   botVideo : fs.readFileSync("./Assets/makima.mp4"),
   botImage1 : "https://images5.alphacoders.com/126/1264439.jpg",
   botImage2 : "https://images8.alphacoders.com/122/1227171.jpg",
@@ -54,7 +54,7 @@ global.charID2 = {
 }
 
 global.charID3 = {
-  botName : "ʀɪᴀꜱ ɢʀᴇᴍᴏʀʏ",
+  botName : "Rias Gremory",
   botVideo : fs.readFileSync("./Assets/Rias.mp4"),
   botImage1 : "https://c4.wallpaperflare.com/wallpaper/280/659/612/highschool-dxd-gremory-rias-wallpaper-preview.jpg",
   botImage2 : "https://wallpapercave.com/cdn-cgi/mirage/4060d9c58e8c34505929baac680386a213cfd243a199f1ff8f223c312de6c835/1280/https://wallpapercave.com/wp/wp1864369.png",
@@ -65,7 +65,7 @@ global.charID3 = {
 }
 
 global.charID4 = {
-  botName : "ᴢᴇʀᴏ ᴛᴡᴏ",
+  botName : "Zero Two",
   botVideo : fs.readFileSync("./Assets/zerotwo.mp4"),
   botImage1 : "https://images3.alphacoders.com/949/949253.jpg",
   botImage2 : "https://images7.alphacoders.com/898/898638.jpg",
@@ -76,7 +76,7 @@ global.charID4 = {
 }
 
 global.charID5 = {
-  botName : "ᴄʜɪᴋᴀ",
+  botName : "Chika MD",
   botVideo : fs.readFileSync("./Assets/chika.mp4"),
   botImage1 : "https://images4.alphacoders.com/100/1002134.png",
   botImage2 : "https://images4.alphacoders.com/100/1002714.jpg",
@@ -87,7 +87,7 @@ global.charID5 = {
 }
 
 global.charID6 = {
-  botName : "ᴍɪᴋᴜ ɴᴀᴋᴀɴᴏ",
+  botName : "Miku Nakano MD",
   botVideo : fs.readFileSync("./Assets/miku.mp4"),
   botImage1 : "https://wallpapercave.com/wp/wp10524580.jpg",
   botImage2 : "https://wallpapercave.com/wp/wp4828029.jpg",
@@ -98,7 +98,7 @@ global.charID6 = {
 }
 
 global.charID7 = {
-  botName : "ᴍᴀʀɪɴ ᴋɪᴛᴀɢᴀᴡᴀ",
+  botName : "Marin Kitagawa MD",
   botVideo : fs.readFileSync("./Assets/marin.mp4"),
   botImage1 : "https://images2.alphacoders.com/125/1257915.jpg",
   botImage2 : "https://wallpapercave.com/wp/wp10472356.png",
