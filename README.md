@@ -31,7 +31,7 @@
   <br>
    
 <details open>
-<summary>🎐 ᴅᴇᴘʟᴏʏ ᴀᴛʟᴀꜱ-ᴍᴅ ɪɴ ᴀɴʏ ᴘʟᴀᴛғᴏʀᴍ ʀᴇᴀᴅ ᴘᴜʙʟɪᴄᴋᴇʏꜱ.ᴍᴅ 🎐</summary>
+<summary>🎐 ᴅᴇᴘʟᴏʏ ᴀᴛʟᴀꜱ-ᴍᴅ ɪɴ ᴀɴʏ ᴘʟᴀᴛғᴏʀᴍ ʀᴇᴀᴅ ᴘᴜʙʟɪᴄᴋᴇʏꜱ 🎐</summary>
 
 <h1 align="center"> 
 <a href="https://railway.app/new/template/n1D5wt?referralCode=nRl6ST">
