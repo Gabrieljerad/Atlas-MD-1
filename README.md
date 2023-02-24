@@ -1,3 +1,5 @@
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
 <h1 align="center"> 〘 ᴀᴛʟᴀꜱ-ᴍᴅ 〙
 
 </h1>
@@ -6,6 +8,8 @@
 <a href="https://github.com/REDZEOX/Atlas-MD">
     <img src="https://i.ibb.co/r2dyh2S/20230213-154752.jpg">
   </a>
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 <p align="center"> 
  ʜᴇʟʟᴏ ᴇᴠᴇʀʏᴏɴᴇ ᴀ ᴡᴀʀᴍ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀʟʟ ᴍʏ ғʀɪᴇɴᴅꜱ ʜᴇʀᴇ ᴘʀᴇꜱᴇɴᴛɪɴɢ ᴀ ɴᴇᴡ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ʀᴇᴅᴢᴇᴏꭗ ᴡʜɪᴄʜ ᴡɪʟʟ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴡᴏʀᴋ ᴇᴀꜱɪᴇʀ. ɢᴜʏ'ꜱ ʜᴀᴠᴇ ᴀ ɢᴏᴏᴅ ᴅᴀʏ ᴛʜᴇ ᴀᴛʟᴀꜱ-ᴍᴅ ᴡᴀꜱ ᴛʜᴇ ᴍᴀɪɴ ᴘᴜʀᴘᴏꜱᴇ ɪꜱ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ɴᴇꭗᴛ ʟᴇᴠᴇʟ ᴀᴛʟᴀꜱ-ᴍᴅ ᴍᴜʟᴛɪᴘʟᴇ ᴅᴇᴠɪᴄᴇꜱ.
@@ -30,8 +34,10 @@
   </a>
   <br>
    
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
 <details open>
-<summary>🎐 ミ ᴅᴇᴘʟᴏʏ ᴀᴛʟᴀꜱ-ᴍᴅ ɪɴ ᴀɴʏ ᴘʟᴀᴛғᴏʀᴍ ⁠ミ 🎐</summary>
+<summary>🎐 ᴅᴇᴘʟᴏʏ ᴀᴛʟᴀꜱ-ᴍᴅ ɪɴ ᴀɴʏ ᴘʟᴀᴛғᴏʀᴍ 🎐</summary>
 
 <h1 align="center"> 
 <a href="https://railway.app/new/template/n1D5wt?referralCode=nRl6ST">
@@ -54,6 +60,8 @@
 </p>
 
 </details>
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 <h4 align="center">🎀 ᴋᴇʏ ғᴇᴀᴛᴜʀᴇꜱ 🎀
 </h2>
@@ -125,3 +133,4 @@
 
 <h2 align="center">🕯️✨ ᴛʜᴀɴᴋꜱ ᴛᴏ ғᴀɴᴛᴏꭗ ✨🕯️
 </h2>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
