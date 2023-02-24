@@ -4,9 +4,9 @@ module.exports = {
   desc: "Ban a member",
   category: "Mods",
   usage: "setchar 0/1/2/3/4/5/6/7",
-  react: "💫",
+  react: "🐼",
   start: async (Miku, m, { text, prefix ,modStatus}) => {
-    let txt = `       『  *ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ʟɪꜱᴛ*  』\n\n\n_0 - ᴀᴛʟᴀꜱ_\n\n_1 - ᴘᴏᴡᴇʀ_\n\n_2 - ᴍᴀᴋɪᴍᴀ_\n\n_3 - ʀɪᴀꜱ ɢʀᴇᴍᴏʀʏ_\n\n_4 - ᴢᴇʀᴏ ᴛᴡᴏ_\n\n_5 - ᴄʜɪᴋᴀ_\n\n_6 - ᴍɪᴋᴜ ɴᴀᴋᴀɴᴏ_\n\n_7 - ᴍᴀʀɪɴ ᴋɪᴛᴀɢᴀᴡᴀ_\n\n\nᴇxᴀᴍᴘʟᴇ: *${prefix}ꜱᴇᴛᴄʜᴀʀ 0*\n`;
+    let txt = `       『  *Bot Character list*  』\n\n\n_0 - Atlas MD_\n\n_1 - Power MD_\n\n_2 - Makima MD_\n\n_3 - Rias Gremory_\n\n_4 - Zero Two_\n\n_5 - Chika MD_\n\n_6 - Miku MD_\n\n_7 - Marin Kitagawa_\n\n\nExample: *${prefix}setchar 0*\n`;
 
     let botLogos = [
       "https://c4.wallpaperflare.com/wallpaper/523/235/790/anime-anime-girls-red-eyes-wallpaper-preview.jpg",
@@ -22,12 +22,12 @@ module.exports = {
     let randomimage = botLogos[Math.floor(Math.random() * botLogos.length)];
    
     let sections = [] 
-    let chars = [`ᴀᴛʟᴀꜱ`, `ᴘᴏᴡᴇʀ`, `ᴍᴀᴋɪᴍᴀ`, `ʀɪᴀꜱ ɢʀᴇᴍᴏʀʏ`, `ᴢᴇʀᴏ ᴛᴡᴏ`, `ᴄʜɪᴋᴀ`, `ᴍɪᴋᴜ ɴᴀᴋᴀɴᴏ`, `ᴍᴀʀɪɴ ᴋɪᴛᴀɢᴀᴡᴀ`]
-    let buttonDesc =[`ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ᴀᴛʟᴀꜱ`, `ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ᴘᴏᴡᴇʀ`, `ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ᴍᴀᴋɪᴍᴀ`, `ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ʀɪᴀꜱ ɢʀᴇᴍᴏʀʏ`, `ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ᴢᴇʀᴏ ᴛᴡᴏ`, `ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ᴄʜɪᴋᴀ`, `ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ᴍɪᴋᴜ ɴᴀᴋᴀɴᴏ`, `ꜱᴇᴛ ʙᴏᴛ ᴄʜᴀʀᴀᴄᴛᴇʀ ᴛᴏ ᴍᴀʀɪɴ ᴋɪᴛᴀɢᴀᴡᴀ`]
-    let buttonTexts = ['-ꜱᴇᴛᴄʜᴀʀ 0', '-ꜱᴇᴛᴄʜᴀʀ 1', '-ꜱᴇᴛᴄʜᴀʀ 2', '-ꜱᴇᴛᴄʜᴀʀ 3', '-ꜱᴇᴛᴄʜᴀʀ 4', '-ꜱᴇᴛᴄʜᴀʀ 5', '-ꜱᴇᴛᴄʜᴀʀ 6', '-ꜱᴇᴛᴄʜᴀʀ 7']
+    let chars = [`Atlas MD`, `Power MD`, `Makima MD`, `Rias Gremory`, `Zero Two`, `Chika MD`, `Miku MD`, `Marin Kitagawa`]
+    let buttonDesc =[`Set bot character to Atlas MD`, `Set bot character to Power MD`, `Set bot character to Makima MD`, `Set bot character to Rias Gremory`, `Set bot character to Zero Two`, `Set bot character to Chika MD`, `Set bot character to Miku MD`, `Set bot character to Marin Kitagawa`]
+    let buttonTexts = ['-setchar 0', '-setchar 1', '-setchar 2', '-setchar 3', '-setchar 4', '-setchar 5', '-setchar 6', '-setchar 7']
     
     for (let i = 0; i < chars.length; i++) {
-        const list = {title: `${prefix}ꜱᴇᴛᴄʜᴀʀ ${i}`,
+        const list = {title: `${prefix}setchar ${i}`,
         rows: [
         
                 {
@@ -45,7 +45,7 @@ module.exports = {
       //image: { url: randomimage },
       text: txt,
       footer: `*${botName}*`,
-      buttonText: "ᴄʜᴏᴏꜱᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ",
+      buttonText: "Choose Character",
       sections,
     };
 
